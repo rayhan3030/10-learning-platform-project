@@ -2,6 +2,7 @@ import { useContext } from "react"
 import { Link } from "react-router-dom"
 import { toast } from "react-toastify"
 import { AuthContext } from "../contexts/UserContext"
+import avatarImg from '../assets/avatar.jpeg'
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext)
@@ -33,6 +34,13 @@ const Navbar = () => {
           {user?.email ? <><Link to='/profile' className='mr-5 hover:text-gray-900'>
             <span className="font-bold"> {user.displayName}</span>
           </Link>
+            <img
+              src={user?.photoURL ? user.photoURL : avatarImg}
+              referrerPolicy='no-referrer'
+              alt=''
+              className=' border w-8 h-8 mx-2 rounded-full bg-gray-500 border-gray-700'
+            />
+
             <Link to='/wallet' className='mr-5 hover:text-gray-900'>
               Wallet
             </Link>

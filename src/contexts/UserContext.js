@@ -46,6 +46,12 @@ const UserContext = ({ children }) => {
         return signInWithPopup(auth, googleProvider)
     }
 
+    // Github Login
+    const signInWithGithub = () => {
+        setLoading(true)
+        return signInWithGithub()
+    }
+
     // 5. LogOut
     const logOut = () => {
         setLoading(true)
@@ -93,6 +99,7 @@ const UserContext = ({ children }) => {
         updateName,
         verifyEMail,
         signInWithGoogle,
+        signInWithGithub,
         logOut,
         signIn,
         resetPassword,

@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom"
 import { AuthContext } from "../contexts/UserContext";
+import biz from "../assets/Language Biz.gif"
 
 const Home = () => {
   const { user } = useContext(AuthContext);
@@ -11,6 +12,9 @@ const Home = () => {
           <h1 className='text-5xl font-bold leading-none sm:text-6xl xl:max-w-3xl text-gray-900'>
             Welcome To Language Biz
           </h1>
+          <div>
+            <img src={biz} alt="" className=" rounded-t-full h-12  lg:h-32" />
+          </div>
           <p className='mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl text-gray-900'>
             Here, an user can authenticate using google or create an account
             using email password. Powered by Firebase.!
