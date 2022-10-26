@@ -14,14 +14,21 @@ const Navbar = () => {
   }
 
   return (
-    <header className='text-gray-600 body-font'>
+    <header className='text-gray-600 body-font border'>
       <div className='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center'>
         <Link
           to='/'
           className='flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0'
         >
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="currentColor"
+            className="w-6 h-6">
+            <path strokeLinecap="round"
+              strokeLinejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802" />
           </svg>
 
           <span className='ml-3 text-xl'>Language-Biz</span>
@@ -31,7 +38,7 @@ const Navbar = () => {
             Home
           </Link>
 
-          {user?.email ? <><Link to='/profile' className='mr-5 hover:text-gray-900'>
+          {user?.displayName ? <><Link to='/profile' className='mr-5 hover:text-gray-900'>
             <span className="font-bold"> {user.displayName}</span>
           </Link>
             <img

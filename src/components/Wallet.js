@@ -40,7 +40,8 @@ const Wallet = () => {
           <p className='text-4xl text-center'>Please Verify Your Email. <br />
             Verification Link Has Been Sent to Your Email Address
           </p>
-        </div>}
+        </div>
+      }
 
 
 

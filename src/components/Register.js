@@ -4,7 +4,11 @@ import { toast } from 'react-toastify';
 import { AuthContext } from '../contexts/UserContext';
 
 const Register = () => {
-  const { createUser, updateName, verifyEMail, signInWithGoogle } = useContext(AuthContext)
+  const { createUser,
+
+    verifyEMail,
+    signInWithGoogle,
+    updateUserProfile } = useContext(AuthContext)
 
   const navigate = useNavigate()
   const location = useLocation();
@@ -20,33 +24,40 @@ const Register = () => {
     const name = event.target.name.value;
     const email = event.target.email.value;
     const password = event.target.password.value;
+    const photoURL = event.target.photoURL.value;
 
     // 1. Create Account
     createUser(email, password)
       .then(result => {
         console.log(result.user)
         event.target.reset();
+        handleUpdateUserProfile(name, photoURL);
         // 2. Update Name
-        updateName(name)
+
+        // 3 Email verification sent!
+        verifyEMail()
           .then(() => {
-            toast.success('Name Updated')
-
-
-            // 3 Email verification sent!
-            verifyEMail()
-              .then(() => {
-                toast.success('Please Check your email for verification Link')
-                navigate(from, { replace: true })
-              })
-              .catch((error) => {
-                toast.error(error.message)
-              })
+            toast.success('Please Check your email for verification Link')
+            navigate(from, { replace: true })
           })
-          .catch(error => {
+          .catch((error) => {
             toast.error(error.message)
           })
       })
-      .catch(error => console.log(error))
+      .catch(error => {
+        toast.error(error.message)
+      })
+
+    // .catch (error => console.log(error))
+    const handleUpdateUserProfile = (name, photoURL) => {
+      const profile = {
+        displayName: name,
+        photoURL: photoURL
+      }
+      updateUserProfile(profile)
+        .then(() => { })
+        .catch(error => console.error(error));
+    }
   }
 
   // 4. Google SignUp
@@ -82,6 +93,19 @@ const Register = () => {
                 name='name'
                 id='name'
                 placeholder='Enter Your Name Here'
+                className='w-full px-3 py-2 border rounded-md border-gray-300 focus:border-gray-900 bg-gray-200 text-gray-900'
+                data-temp-mail-org='0'
+              />
+            </div>
+            <div>
+              <label htmlFor='photoURL' className='block mb-2 text-sm'>
+                Photo URL
+              </label>
+              <input
+                type='text'
+                name='photoURL'
+                id='photoURL'
+                placeholder='Enter Your Photo URL'
                 className='w-full px-3 py-2 border rounded-md border-gray-300 focus:border-gray-900 bg-gray-200 text-gray-900'
                 data-temp-mail-org='0'
               />
