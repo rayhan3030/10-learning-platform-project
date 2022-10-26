@@ -7,6 +7,9 @@ import Wallet from '../components/Wallet'
 import Profile from '../components/Profile'
 import ErrorPage from "../components/ErrorPage";
 import PrivateRoute from "./PrivateRoute";
+import Testing from "../components/Testing"
+import Courses from "../components/Courses/Courses";
+import Course from "../components/Course/Course";
 
 const router = createBrowserRouter([
     {
@@ -16,11 +19,13 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element: <Home />
+                element: <Home />,
+                loader: () => fetch('https://language-biz-server.vercel.app/allCourses')
             },
             {
                 path: '/home',
-                element: <Home />
+                element: <Home />,
+                loader: () => fetch('https://language-biz-server.vercel.app/allCourses')
             },
             {
                 path: '/login',
@@ -42,6 +47,19 @@ const router = createBrowserRouter([
                     <PrivateRoute>
                         <Profile />
                     </PrivateRoute>
+            },
+            {
+                path: '/testing',
+                element: <Testing></Testing>
+            },
+            {
+                path: '/courses/:id',  // per topic
+                element: <Courses></Courses>,
+
+            },
+            {
+                path: '/course/:name', //details course
+                element: <Course></Course>
             },
 
         ],
