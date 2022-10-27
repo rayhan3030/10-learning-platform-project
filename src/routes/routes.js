@@ -7,9 +7,15 @@ import Wallet from '../components/Wallet'
 import Profile from '../components/Profile'
 import ErrorPage from "../components/ErrorPage";
 import PrivateRoute from "./PrivateRoute";
-import Testing from "../components/Testing"
-import Courses from "../components/Courses/Courses";
-import Course from "../components/Course/Course";
+import Category from "../components/Courses/Category";
+import Course from "../components/Courses/Course";
+import Checkout from "../components/Checkout/Checkout";
+import FaQ from "../components/Faq&bloG/FaQ";
+import Blog from "../components/Faq&bloG/Blog";
+
+
+
+
 
 const router = createBrowserRouter([
     {
@@ -20,12 +26,24 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home />,
-                loader: () => fetch('https://language-biz-server.vercel.app/allCourses')
+                loader: () => fetch('https://new-server-after-crash.vercel.app/courses')
+
             },
             {
                 path: '/home',
                 element: <Home />,
-                loader: () => fetch('https://language-biz-server.vercel.app/allCourses')
+                loader: () => fetch('https://new-server-after-crash.vercel.app/courses')
+            },
+
+            {
+                path: '/category/:id',
+                element: <Category></Category>,
+                loader: ({ params }) => fetch(`https://new-server-after-crash.vercel.app/category/${params.id}`)
+            },
+            {
+                path: '/course/:id',
+                element: <Course></Course>,
+                loader: ({ params }) => fetch(`https://new-server-after-crash.vercel.app/course/${params.id}`)
             },
             {
                 path: '/login',
@@ -42,25 +60,31 @@ const router = createBrowserRouter([
                 </PrivateRoute>
             },
             {
+                path: '/checkout/:id',
+                element: <PrivateRoute>
+                    <Checkout></Checkout>
+                </PrivateRoute>,
+                loader: ({ params }) => fetch(`https://new-server-after-crash.vercel.app/course/${params.id}`)
+
+            },
+            {
                 path: '/profile',
                 element:
                     <PrivateRoute>
                         <Profile />
                     </PrivateRoute>
-            },
-            {
-                path: '/testing',
-                element: <Testing></Testing>
-            },
-            {
-                path: '/courses/:id',  // per topic
-                element: <Courses></Courses>,
 
             },
+
             {
-                path: '/course/:name', //details course
-                element: <Course></Course>
+                path: '/faq',
+                element: <FaQ></FaQ>
             },
+            {
+                path: '/blog',
+                element: <Blog></Blog>
+            }
+
 
         ],
     },

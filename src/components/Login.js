@@ -28,6 +28,7 @@ const Login = () => {
         console.log(result.user);
         event.target.reset();
         navigate(from, { replace: true })
+        navigate("/home");
       })
       .catch(error => {
         toast.error(error.message)
@@ -41,6 +42,7 @@ const Login = () => {
       .then(result => {
         console.log(result.user)
         navigate(from, { replace: true })
+        navigate("/home");
       })
       .catch(error => console.error(error))
   }
@@ -52,6 +54,7 @@ const Login = () => {
         const user = result.user;
         console.log(user)
         navigate(from, { replace: true })
+        navigate("/home");
       })
       .catch(error => console.error(error))
 

@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Ad = () => {
+const FaQ = () => {
     return (
         <div>
-            <h1>Post your ad here</h1>
+            <h2>This is Faq</h2>
         </div>
     );
 };
 
-export default Ad;
+export default FaQ;

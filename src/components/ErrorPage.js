@@ -8,7 +8,7 @@ const ErrorPage = () => {
         <svg
           xmlns='http://www.w3.org/2000/svg'
           viewBox='0 0 512 512'
-          className='w-40 h-40 text-gray-600'
+          className='w-40 h-40 text-red-600'
         >
           <path
             fill='currentColor'
@@ -35,10 +35,10 @@ const ErrorPage = () => {
             <span className='sr-only'>Error</span>404
           </h2>
           <p className='text-2xl font-semibold md:text-3xl mb-8'>
-            Sorry, we couldn't find this page.
+            Sorry, we couldn't find this page. <br /> <span className='text-red-600'>পেজটি খুজে পাই নি ভাইয়া</span>
           </p>
           <Link
-            to='/'
+            to='/home'
             className='px-8 py-3 font-semibold rounded bg-gray-900 hover:bg-gray-700 text-gray-100'
           >
             Back to homepage
