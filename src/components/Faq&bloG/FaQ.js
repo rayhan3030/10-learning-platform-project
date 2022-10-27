@@ -6,13 +6,13 @@ const FaQ = () => {
             <section className="dark:bg-gray-800 dark:text-gray-100">
                 <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
                     <div>
-                        <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl dark:text-gray-50">Aliquip definiebas ad est</h2>
-                        <p className="max-w-3xl mx-auto mt-4 text-xl text-center dark:text-gray-400">Quando cetero his ne, eum admodum sapientem ut.</p>
+                        <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl dark:text-gray-50">Frequently Asked Questions</h2>
+                        <p className="max-w-3xl mx-auto mt-4 text-xl text-center dark:text-gray-400">All Rights Recieves to Language Biz</p>
                     </div>
                     <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
                         <div>
-                            <h3 className="text-2xl font-bold tracking-tight sm:text-3xl dark:text-gray-50">Ad vix debet docendi</h3>
-                            <p className="mt-3 text-lg dark:text-gray-400">Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod tacimates.</p>
+                            <h3 className="text-2xl font-bold tracking-tight sm:text-3xl dark:text-gray-50">The World Demand Skills</h3>
+                            <p className="mt-3 text-lg dark:text-gray-400">Discover different ways you can participate in creating a new future in this online course. Carefully crafted content that has inspired thousands worldwide to make a difference.</p>
                             <div className="mt-12 space-y-12">
                                 <div className="flex">
                                     <div className="flex-shrink-0">
@@ -23,8 +23,8 @@ const FaQ = () => {
                                         </div>
                                     </div>
                                     <div className="ml-4">
-                                        <h4 className="text-lg font-medium leading-6 dark:text-gray-50">Per ei quaeque sensibus</h4>
-                                        <p className="mt-2 dark:text-gray-400">Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.</p>
+                                        <h4 className="text-lg font-medium leading-6 dark:text-gray-50">Do the classes meet at a specific time during the week?</h4>
+                                        <p className="mt-2 dark:text-gray-400">No, all of Language Biz’s online courses are offered asynchronously so you can complete the coursework at a time that is most convenient for you!</p>
                                     </div>
                                 </div>
                                 <div className="flex">
@@ -36,8 +36,8 @@ const FaQ = () => {
                                         </div>
                                     </div>
                                     <div className="ml-4">
-                                        <h4 className="text-lg font-medium leading-6 dark:text-gray-50">Cu imperdiet posidonium sed</h4>
-                                        <p className="mt-2 dark:text-gray-400">Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.</p>
+                                        <h4 className="text-lg font-medium leading-6 dark:text-gray-50">What is the time commitment for the courses?</h4>
+                                        <p className="mt-2 dark:text-gray-400">Participants are asked to commit 10 hours to the class, which works out to two and a half hours a week.</p>
                                     </div>
                                 </div>
                                 <div className="flex">
@@ -49,8 +49,8 @@ const FaQ = () => {
                                         </div>
                                     </div>
                                     <div className="ml-4">
-                                        <h4 className="text-lg font-medium leading-6 dark:text-gray-50">Nulla omittam sadipscing mel ne</h4>
-                                        <p className="mt-2 dark:text-gray-400">At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.</p>
+                                        <h4 className="text-lg font-medium leading-6 dark:text-gray-50">Can I receive college credit for these courses?</h4>
+                                        <p className="mt-2 dark:text-gray-400">At this time YALSA is not offering courses in conjunction with an institution of higher learning, so no college course credits will be earned by participants.</p>
                                     </div>
                                 </div>
                             </div>
@@ -62,8 +62,8 @@ const FaQ = () => {
                     <div>
                         <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
                             <div className="lg:col-start-2">
-                                <h3 className="text-2xl font-bold tracking-tight sm:text-3xl dark:text-gray-50">Eam nibh gloriatur ex</h3>
-                                <p className="mt-3 text-lg dark:text-gray-400">Per odio fabellas consulatu cu. Utroque detracto mel ea, quo te latine theophrastus. Ea his tale nibh dissentias, mei exerci tamquam euripidis cu.</p>
+                                <h3 className="text-2xl font-bold tracking-tight sm:text-3xl dark:text-gray-50">Language can break all the barriers</h3>
+                                <p className="mt-3 text-lg dark:text-gray-400">Even if you’re not crossing oceans, time zones or into new cultures, communication can be tough. Just think about how hard it is to communicate with your most intimate contacts;</p>
                                 <div className="mt-12 space-y-12">
                                     <div className="flex">
                                         <div className="flex-shrink-0">
@@ -74,8 +74,8 @@ const FaQ = () => {
                                             </div>
                                         </div>
                                         <div className="ml-4">
-                                            <h4 className="text-lg font-medium leading-6 dark:text-gray-50">Cibo augue offendit has ad</h4>
-                                            <p className="mt-2 dark:text-gray-400">An per velit appellantur, ut utinam minimum nominavi sit, odio nostro habemus ne nec. Ne sonet regione contentiones est.</p>
+                                            <h4 className="text-lg font-medium leading-6 dark:text-gray-50">Can I receive continuing education credit for these courses?</h4>
+                                            <p className="mt-2 dark:text-gray-400">Language Biz's courses are the equivalent of 10 contact hours. Upon successful completion of the course, YALSA will issue you a certificate of completion indicating the number of c</p>
                                         </div>
                                     </div>
                                     <div className="flex">
@@ -87,8 +87,8 @@ const FaQ = () => {
                                             </div>
                                         </div>
                                         <div className="ml-4">
-                                            <h4 className="text-lg font-medium leading-6 dark:text-gray-50">At eum ferri luptatum lobortis</h4>
-                                            <p className="mt-2 dark:text-gray-400">Te per quidam maiorum ocurreret, etiam delicatissimi usu ad. Ne has quod periculis. Te sit primis iisque efficiantur.</p>
+                                            <h4 className="text-lg font-medium leading-6 dark:text-gray-50">How much do the courses cost?</h4>
+                                            <p className="mt-2 dark:text-gray-400">A four week course costs: bdt: 530 for Biz members, bdt: 1075 for Biz members, bdt:810 for non-ALA members, $600 for student members and retired members</p>
                                         </div>
                                     </div>
                                     <div className="flex">
@@ -100,8 +100,8 @@ const FaQ = () => {
                                             </div>
                                         </div>
                                         <div className="ml-4">
-                                            <h4 className="text-lg font-medium leading-6 dark:text-gray-50">Dicunt verterem evertitur eu sea</h4>
-                                            <p className="mt-2 dark:text-gray-400">Audire principes rationibus eam an, autem nominavi luptatum per te. Sumo fabulas vim eu, sonet saperet eleifend ut vix.</p>
+                                            <h4 className="text-lg font-medium leading-6 dark:text-gray-50">I’ve registered for a course. How do I access it?</h4>
+                                            <p className="mt-2 dark:text-gray-400">You will receive an email containing your login information one business day prior to the first day of the class. </p>
                                         </div>
                                     </div>
                                 </div>
