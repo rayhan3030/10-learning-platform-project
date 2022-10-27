@@ -44,6 +44,11 @@ const Navbar = () => {
           <Link to='/blog' className='mr-5 hover:text-gray-900'>
             Blog
           </Link>
+          <label for="Toggle3" className="inline-flex items-center p-2 rounded-md cursor-pointer dark:text-gray-800 ">
+            <input id="Toggle3" type="checkbox" className="hidden peer" />
+            <span className="px-4 py-2 rounded-l-md dark:bg-black peer-checked:dark:bg-white text-white">Dark</span>
+            <span className="px-4 py-2 rounded-r-md dark:bg-white peer-checked:dark:bg-violet-400">Light</span>
+          </label>
 
           {user?.displayName ? <><Link to='/profile' className='mr-5 hover:text-gray-900'>
             <span className="font-bold"> {user.displayName}</span>
@@ -58,9 +63,7 @@ const Navbar = () => {
               {user.displayName}
             </ReactTooltip>
 
-            <Link to='/wallet' className='mr-5 hover:text-gray-900'>
-              Wallet
-            </Link>
+
 
             <button onClick={handleLogOut} className='inline-flex items-center bg-gray-300 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0'>
               Logout
