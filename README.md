@@ -1,4 +1,92 @@
-# Getting Started with Create React App
+ 
+ -----------------------🆆🅴🅻🅲🅾🅼🅴-----------------------
+                             TO
+
+               ░L░a░n░g░u░a░g░e░ ░B░i░z░
+# Language Biz
+We are provide you a power to communicate to the world 
+
+# Live Site Link:  https://conceptauth.web.app/
+
+Welcome to Language Auth. 
+
+------------ꜱɪᴛᴇ ꜰᴇᴀᴛᴜʀᴇꜱ-------------
+
+* This Single Page Application is Built on React App and 
+       Tailwind CSS, 
+       Mamba UI, 
+ used for designing the website
+* Main dependences are 
+       React-router-dom, 
+       Firebase, 
+       React-to-pdf, 
+       Context-Api, 
+       React Toastify, 
+       React Tooltip 
+* You can login via email, password and also with google and github account.
+* There is a vast FAQ section with some important QNA about this website.
+* Six Course added with course content.
+* One customized GIF image used in Home Route
+* All the Pictures in course materials are customized and created by jr. Web Dev
+* You can Register with email, password and Photo URL 
+* You can also Register with Githab and Google Account 
+* Email verification is needed to visit private route like Checkout Page and Profile Page 
+* Dark and Light Toggle Button added. But not functioning!!
+* Course Section and Course Category Section have Deffirent Design.
+
+
+🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰🅰
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Getting Started with Create React App  
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
